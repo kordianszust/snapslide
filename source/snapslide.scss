@@ -1,0 +1,27 @@
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    section {
+        min-height: 100%;
+        width: 100%;
+        background: red;
+        scroll-snap-align: start;
+
+        padding: 30px;
+    }
+}
+
+.debug {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
